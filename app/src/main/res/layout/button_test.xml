@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:background="@drawable/btn_black"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:height="166dp"
+            android:text="1"
+            android:gravity="center"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:text="Tile2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:height="126dp"
+            android:gravity="center"
+            android:layout_weight=".50"
+            android:background="@drawable/btn_blue"
+            />
+
+        <Button
+            android:text="Tile3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:height="126dp"
+            android:gravity="center"
+            android:layout_weight=".50"
+            android:background="#e75548"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:text="Tile4"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:height="126dp"
+            android:gravity="center"
+            android:layout_weight=".50"
+            android:background="#29d217"/>
+
+        <Button
+            android:text="Tile5"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:height="126dp"
+            android:gravity="center"
+            android:layout_weight=".50"
+            android:background="#e519cb"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+        <Button
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:height="176dp"
+            android:text="INFO"
+            android:gravity="center"
+            android:background="#09eadd"/>
+    </LinearLayout>
+</LinearLayout>
