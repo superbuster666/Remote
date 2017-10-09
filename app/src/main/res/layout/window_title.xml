@@ -3,15 +3,40 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="horizontal"
     android:layout_width="fill_parent"
-    android:layout_height="35dip"
+    android:layout_height="85dip"
     android:gravity="center_vertical"
     android:paddingLeft="5dip"
     android:background="#323331">
 
-    <ImageView
+    <Button
         android:id="@+id/header"
-        android:src="@drawable/back"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"/>
+        android:background="@drawable/btn_blue"
+        android:layout_width="0dp"
+        android:layout_weight=".33"
+        android:layout_height="fill_parent"
+        android:layout_marginRight="10dp"
+        android:text="Gå tilbake"
+        />
+
+    <Button
+        android:layout_width="0dp"
+        android:layout_weight=".33"
+        android:layout_height="fill_parent"
+        android:background="@drawable/button_red"
+        android:layout_marginRight="10dp"
+        android:text="Kommandoer"
+        />
+
+    <Button
+        android:layout_width="0dp"
+        android:layout_weight=".33"
+        android:layout_height="fill_parent"
+        android:background="@drawable/btn_blue"
+        android:layout_marginRight="10dp"
+        android:text="historikk"
+        />
+
+
+
 
 </LinearLayout>

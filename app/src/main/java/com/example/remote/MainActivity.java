@@ -11,6 +11,7 @@ import android.view.View;
 import android.view.Window;
 import android.widget.Button;
 import android.widget.TextView;
+import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -43,6 +44,9 @@ public class MainActivity extends AppCompatActivity {
 
         // Set the OnClickListener for the button so we see when it's pressed.
         findViewById(R.id.red_button).setOnClickListener(mSendClickListener);
+        findViewById(R.id.black_button_info).setOnClickListener(toastListener);
+
+
         //findViewById(R.id.send_button).setOnClickListener(mSendClickListener);
         //findViewById(R.id.get_freqs_button).setOnClickListener(mGetFreqsClickListener);
         //mFreqsText = (TextView) findViewById(R.id.freqs_text);
@@ -67,6 +71,26 @@ public class MainActivity extends AppCompatActivity {
             mCIR.transmit(38400, pattern);
         }
     };
+
+    View.OnClickListener toastListener = new View.OnClickListener() {
+        public void onClick(View v) {
+            Context context = getApplicationContext();
+            CharSequence text = "I denne menyen kan du velge Kanaler med knappene. Du kan skru av/På Roboten ved å trykke på den røde AV/På knappen. Du kan også endre til Kommandomodus helt øverst ";
+            int duration = Toast.LENGTH_LONG;
+
+            for (int i=0; i < 3; i++)
+            {
+                Toast toast = Toast.makeText(context, text, duration);
+                toast.show();
+            }
+        }
+    };
+
+
+
+
+
+
 
     View.OnClickListener mGetFreqsClickListener = new View.OnClickListener() {
         public void onClick(View v) {
